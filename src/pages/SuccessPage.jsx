@@ -46,7 +46,7 @@ const SuccessPage = () => {
     if (type === "register-vnpay") {
       const formData = JSON.parse(localStorage.getItem("formData"));
 
-      axios.post("http://localhost:2002/gms/api/v1/customer/add-member", {
+      axios.post("https://eagle-fits.onrender.com/gms/api/v1/customer/add-member", {
         name: formData?.name,
         email: formData?.email,
         phone: formData?.phone,

@@ -83,7 +83,7 @@ const CoachDetailPage = () => {
   const getCoachInfo = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:2002/gms/api/v1/coach/get-coach-info/${id}`
+        `https://eagle-fits.onrender.com/gms/api/v1/coach/get-coach-info/${id}`
       );
       setCoachInfo(response.data);
       setLoading(false);
@@ -95,7 +95,7 @@ const CoachDetailPage = () => {
   const getCoachSchedule = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:2002/gms/api/v1/coach/get-coach-busy-schedule/${id}`
+        `https://eagle-fits.onrender.com/gms/api/v1/coach/get-coach-busy-schedule/${id}`
       );
       setSchedule(response.data);
     } catch (err) {
@@ -106,7 +106,7 @@ const CoachDetailPage = () => {
   const getOtherItems = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:2002/gms/api/v1/coach/get-other-coaches/${id}`
+        `https://eagle-fits.onrender.com/gms/api/v1/coach/get-other-coaches/${id}`
       );
       setOtherItems(response.data);
     } catch (err) {

@@ -135,7 +135,7 @@ const FreeTrialForm = ({ description }) => {
   const getListGyms = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/gym/get-list-active-gym"
+        "https://eagle-fits.onrender.com/gms/api/v1/gym/get-list-active-gym"
       );
       setListGym(response.data);
     } catch (err) {
@@ -200,7 +200,7 @@ const FreeTrialForm = ({ description }) => {
     // Kiểm tra xem có lỗi nào không
     if (!nameError && !phoneError && !clubError && !timeContactError) {
       try {
-        await axios.post("http://localhost:2002/gms/api/v1/customer/register-free-trial", {
+        await axios.post("https://eagle-fits.onrender.com/gms/api/v1/customer/register-free-trial", {
           name: formData.name,
           phone: formData.phone,
           gymId: formData.club,

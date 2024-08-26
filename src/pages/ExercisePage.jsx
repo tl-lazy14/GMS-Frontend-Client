@@ -109,7 +109,7 @@ const ExercisePage = () => {
   const getInfoIntro = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-intro-page",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-intro-page",
         {
           params: {
             page: "Exercise Library",
@@ -125,7 +125,7 @@ const ExercisePage = () => {
   const getListExerciseCategory = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:2002/gms/api/v1/exercise/get-list-category`
+        `https://eagle-fits.onrender.com/gms/api/v1/exercise/get-list-category`
       );
       setListCategories(response.data);
     } catch (err) {
@@ -136,7 +136,7 @@ const ExercisePage = () => {
   const getListExercise = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:2002/gms/api/v1/exercise/get-list-exercise`,
+        `https://eagle-fits.onrender.com/gms/api/v1/exercise/get-list-exercise`,
         {
           params: {
             category: category,

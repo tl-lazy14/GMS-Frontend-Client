@@ -80,7 +80,7 @@ const CoachPage = () => {
   const getInfoIntro = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-intro-page",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-intro-page",
         {
           params: {
             page: "Coach",
@@ -96,7 +96,7 @@ const CoachPage = () => {
   const getGeneralInfo = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-list-general-info",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-list-general-info",
         {
           params: {
             page: "Coaches Page",
@@ -112,7 +112,7 @@ const CoachPage = () => {
   const getListCoach = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/coach/get-list-coach",
+        "https://eagle-fits.onrender.com/gms/api/v1/coach/get-list-coach",
         {
           params: {
             level: coachLevel,

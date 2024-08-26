@@ -245,7 +245,7 @@ const CheckoutPage = () => {
   const getListGyms = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/gym/get-list-active-gym"
+        "https://eagle-fits.onrender.com/gms/api/v1/gym/get-list-active-gym"
       );
       setListGyms(response.data);
     } catch (err) {
@@ -256,7 +256,7 @@ const CheckoutPage = () => {
   const getBankAccounts = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/brand/get-brand-info"
+        "https://eagle-fits.onrender.com/gms/api/v1/brand/get-brand-info"
       );
       setBankAccounts(JSON.parse(response.data.bankAccounts));
     } catch (err) {
@@ -431,7 +431,7 @@ const CheckoutPage = () => {
         localStorage.setItem("formData", JSON.stringify(formDataStorage));
         localStorage.setItem("isSubmitRegisterService", "true");
         try {
-          const response = await axios.get("http://localhost:2002/gms/api/v1/customer/get-pay-url", {
+          const response = await axios.get("https://eagle-fits.onrender.com/gms/api/v1/customer/get-pay-url", {
             params: {
               amount: Math.round(selectedPackage.priceMonth * formData.durationService * 25000)
             },
@@ -447,7 +447,7 @@ const CheckoutPage = () => {
   const handleConfirmRegister = async () => {
     try {
       await axios.post(
-        "http://localhost:2002/gms/api/v1/customer/create-transfer-registration",
+        "https://eagle-fits.onrender.com/gms/api/v1/customer/create-transfer-registration",
         {
           name: formData.name,
           email: formData.email,

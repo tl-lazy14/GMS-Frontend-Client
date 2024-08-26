@@ -326,7 +326,7 @@ const Homepage = () => {
   const getImageSlider = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/brand/get-image-slider"
+        "https://eagle-fits.onrender.com/gms/api/v1/brand/get-image-slider"
       );
       const imageSliderResponse = JSON.parse(response.data.imageSlider);
       setImageSlider(imageSliderResponse);
@@ -338,7 +338,7 @@ const Homepage = () => {
   const getListGeneralInfo = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-list-general-info",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-list-general-info",
         {
           params: {
             page: "Home Page",
@@ -354,7 +354,7 @@ const Homepage = () => {
   const getTransItems = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/customer/get-workout-result-homepage"
+        "https://eagle-fits.onrender.com/gms/api/v1/customer/get-workout-result-homepage"
       );
       setTransItems(response.data);
     } catch (err) {
@@ -365,7 +365,7 @@ const Homepage = () => {
   const getGymDes = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-intro-page",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-intro-page",
         {
           params: {
             page: "Gym",
@@ -381,7 +381,7 @@ const Homepage = () => {
   const getListGyms = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/gym/get-list-active-gym"
+        "https://eagle-fits.onrender.com/gms/api/v1/gym/get-list-active-gym"
       );
       setGymItems(response.data);
     } catch (err) {
@@ -392,7 +392,7 @@ const Homepage = () => {
   const getCoachItems = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/coach/get-list-coach-homepage"
+        "https://eagle-fits.onrender.com/gms/api/v1/coach/get-list-coach-homepage"
       );
       setCoachItems(response.data);
     } catch (err) {
@@ -403,7 +403,7 @@ const Homepage = () => {
   const getListMembershipPackage = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/service/get-active-membership-package"
+        "https://eagle-fits.onrender.com/gms/api/v1/service/get-active-membership-package"
       );
       setServiceItems(response.data);
     } catch (err) {

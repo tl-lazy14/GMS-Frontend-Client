@@ -140,7 +140,7 @@ const BlogPage = () => {
   const getInfoIntro = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-intro-page",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-intro-page",
         {
           params: {
             page: "Blog",
@@ -160,7 +160,7 @@ const BlogPage = () => {
   const getListArticles = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:2002/gms/api/v1/article/get-list-article`,
+        `https://eagle-fits.onrender.com/gms/api/v1/article/get-list-article`,
         {
           params: {
             category: category,

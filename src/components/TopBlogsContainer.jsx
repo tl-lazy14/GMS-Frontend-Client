@@ -64,7 +64,7 @@ const TopBlogsContainer = () => {
   const getTopBlogs = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/article/get-top-articles"
+        "https://eagle-fits.onrender.com/gms/api/v1/article/get-top-articles"
       );
       setListBlogs(response.data);
     } catch (err) {

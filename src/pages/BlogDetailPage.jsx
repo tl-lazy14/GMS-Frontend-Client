@@ -98,7 +98,7 @@ const BlogDetailPage = () => {
   const getArticle = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:2002/gms/api/v1/article/get-article/${id}`
+        `https://eagle-fits.onrender.com/gms/api/v1/article/get-article/${id}`
       );
       const articleInfo = response.data;
       setArticleData({
@@ -114,7 +114,7 @@ const BlogDetailPage = () => {
   const getOtherItems = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:2002/gms/api/v1/article/get-other-articles/${id}`
+        `https://eagle-fits.onrender.com/gms/api/v1/article/get-other-articles/${id}`
       );
       setOtherItems(response.data);
     } catch (err) {
@@ -124,7 +124,7 @@ const BlogDetailPage = () => {
 
   const addView = async () => {
     try {
-      await axios.put(`http://localhost:2002/gms/api/v1/article/add-view/${id}`);
+      await axios.put(`https://eagle-fits.onrender.com/gms/api/v1/article/add-view/${id}`);
     } catch (err) {
       console.log(err);
     }

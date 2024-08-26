@@ -11,7 +11,7 @@ const FreeTrialContainer = () => {
   const getData = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-intro-page",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-intro-page",
         {
           params: {
             page: "Free Trial Experience",

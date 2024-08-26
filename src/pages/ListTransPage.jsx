@@ -97,7 +97,7 @@ const ListTransPage = () => {
   const getInfoIntro = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-intro-page",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-intro-page",
         {
           params: {
             page: "Transformation",
@@ -117,7 +117,7 @@ const ListTransPage = () => {
   const getListResults = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:2002/gms/api/v1/customer/get-list-result`,
+        `https://eagle-fits.onrender.com/gms/api/v1/customer/get-list-result`,
         {
           params: {
             gymId: "all",

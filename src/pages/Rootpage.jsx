@@ -10,7 +10,7 @@ const Rootpage = () => {
 
   const getBrandInfo = async () => {
     try {
-      const response = await axios.get("http://localhost:2002/gms/api/v1/brand/get-brand-info");
+      const response = await axios.get("https://eagle-fits.onrender.com/gms/api/v1/brand/get-brand-info");
       setBrandInfo({
         ...response.data,
         bankAccounts: JSON.parse(response.data.bankAccounts),

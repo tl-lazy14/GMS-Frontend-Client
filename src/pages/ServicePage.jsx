@@ -157,7 +157,7 @@ const ServicePage = () => {
   const getInfoIntro = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-intro-page",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-intro-page",
         {
           params: {
             page: "Service",
@@ -173,7 +173,7 @@ const ServicePage = () => {
   const getServiceInfo = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-list-general-info",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-list-general-info",
         {
           params: {
             page: "Service Page",
@@ -189,7 +189,7 @@ const ServicePage = () => {
   const getListBenefit = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/service/get-all-benefit"
+        "https://eagle-fits.onrender.com/gms/api/v1/service/get-all-benefit"
       );
       setDataBenefits(response.data);
     } catch (err) {
@@ -200,7 +200,7 @@ const ServicePage = () => {
   const getListMembershipPackage = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/service/get-active-membership-package-with-benefit"
+        "https://eagle-fits.onrender.com/gms/api/v1/service/get-active-membership-package-with-benefit"
       );
       const memberships = response.data;
       const formattedMemberships = memberships.map((membership) => ({

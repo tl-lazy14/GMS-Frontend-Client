@@ -112,7 +112,7 @@ const ClassSchedulePage = () => {
   const getInfoIntro = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-intro-page",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-intro-page",
         {
           params: {
             page: "Class",
@@ -128,7 +128,7 @@ const ClassSchedulePage = () => {
   const getGeneralInfo = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/content-website/get-list-general-info",
+        "https://eagle-fits.onrender.com/gms/api/v1/content-website/get-list-general-info",
         {
           params: {
             page: "Classes Page",
@@ -144,7 +144,7 @@ const ClassSchedulePage = () => {
   const getListGyms = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/gym/get-list-active-gym"
+        "https://eagle-fits.onrender.com/gms/api/v1/gym/get-list-active-gym"
       );
       setListGyms(response.data);
     } catch (err) {
@@ -155,7 +155,7 @@ const ClassSchedulePage = () => {
   const getListClassCategory = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:2002/gms/api/v1/class/get-list-category"
+        "https://eagle-fits.onrender.com/gms/api/v1/class/get-list-category"
       );
       setListPrograms(response.data);
     } catch (err) {
@@ -167,7 +167,7 @@ const ClassSchedulePage = () => {
     try {
       if (gym !== "not-select" && program !== "not-select") {
         const response = await axios.get(
-          "http://localhost:2002/gms/api/v1/class/get-list-class",
+          "https://eagle-fits.onrender.com/gms/api/v1/class/get-list-class",
           {
             params: {
               gymId: gym,
