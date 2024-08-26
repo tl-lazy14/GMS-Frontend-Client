@@ -20,7 +20,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
     "dayjs": "^1.11.11",
-    "google-maps-react": "^2.0.6",
     "moment": "^2.30.1",
     "react": "^18.2.0",
     "react-clamp": "^1.0.5",
